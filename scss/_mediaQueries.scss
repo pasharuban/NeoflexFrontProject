@@ -1,0 +1,104 @@
+@media screen and (max-width: 1280px) {
+  .page-header {
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  nav {
+    display: none;
+  }
+  .hamburger {
+    margin-right: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+  .hamburger:hover {
+    cursor: pointer;
+  }
+  .hamburger_layer {
+    background: white;
+    display: inline-block;
+    position: relative;
+    height: 2px;
+    width: 40px;
+  }
+
+  .hamburger_layer:before {
+    background: white;
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+  }
+  .hamburger_layer:after {
+    background: white;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 40px;
+    height: 2px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    font-size: 16px;
+  }
+
+  .tabs i {
+    font-size: 30px;
+  }
+
+  .client span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .client {
+    display: none;
+  }
+
+  .tabs_item span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cards-container {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .cards-section {
+    flex-direction: column;
+
+    .card {
+      margin: 30px 0;
+      width: 100%;
+
+      .card-image img {
+        width: 100%;
+      }
+    }
+  }
+
+  .add-new-card {
+    align-self: center;
+  }
+}

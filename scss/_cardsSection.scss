@@ -1,0 +1,130 @@
+.cards-section {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+
+  flex-grow: 0;
+
+  .card {
+    width: 270px;
+
+    @include flexColumn;
+
+    margin-right: 30px;
+
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .card-content {
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+
+      margin: 15px;
+
+      .card-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        margin-bottom: 15px;
+
+        .card-title-and-subtitle {
+          @include flexColumn;
+          justify-content: flex-start;
+
+          .card-title {
+            font-weight: bold;
+            font-size: 18px;
+
+            color: #000000;
+            text-transform: capitalize;
+          }
+
+          .card-subtitle {
+            font-size: 10px;
+
+            color: #828282;
+            text-transform: capitalize;
+          }
+        }
+
+        .card-date {
+          font-size: 10px;
+
+          color: #000000;
+        }
+      }
+
+      .card-text-content {
+        @include flexColumn;
+        justify-content: space-between;
+
+        flex-grow: 1;
+
+        .card-text {
+          text-align: justify;
+          font-size: 12px;
+          margin-bottom: 24px;
+
+          color: #000000;
+        }
+
+        .card-read-more {
+          width: 114px;
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}
+
+.card-image {
+  position: relative;
+
+  .like-bg {
+    position: absolute;
+    right: 18px;
+    bottom: -8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    background: #2f80ed;
+
+    border-radius: 50%;
+
+    &:hover .like {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+
+    .like {
+      width: 15px;
+      height: 15px;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='15' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M13.544.979c-1.605-1.492-3.993-1.224-5.467.435l-.577.648-.577-.648C5.453-.245 3.062-.513 1.456.979c-1.84 1.713-1.936 4.788-.29 6.644l5.67 6.386a.867.867 0 0 0 1.326 0l5.67-6.386c1.648-1.856 1.552-4.93-.288-6.644Z' fill='%23fff'/%3e%3c/svg%3e");
+    }
+
+    .liked {
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='15' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M13.544.979c-1.605-1.492-3.993-1.224-5.467.435l-.577.648-.577-.648C5.453-.245 3.062-.513 1.456.979c-1.84 1.713-1.936 4.788-.29 6.644l5.67 6.386a.867.867 0 0 0 1.326 0l5.67-6.386c1.648-1.856 1.552-4.93-.288-6.644Z' fill='%23EB5757'/%3e%3c/svg%3e");
+    }
+  }
+}
+
+.cards-container {
+  @include flexColumn;
+  align-items: flex-start;
+  margin-left: 30px;
+}
+
+.add-new-card {
+  margin-top: 35px;
+}

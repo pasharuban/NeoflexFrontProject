@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./css/index.min.css" />
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -105,6 +105,16 @@
               <span>Item17</span>
               <span>Item18</span>
             </div>
+            <div class="table-row row-elements">
+              <span>Item16</span>
+              <span>Item17</span>
+              <span>Item18</span>
+            </div>
+            <div class="table-row row-elements">
+              <span>Item19</span>
+              <span>Item20</span>
+              <span>Item21</span>
+            </div>
           </div>
 
           <ul class="pagination">
@@ -132,64 +142,67 @@
         </div>
       </div>
 
-      <div class="cards-section">
-        <div class="card">
-          <div class="card-image">
-            <img src="./img/card1_image.png" alt="factory plant" />
-            <div class="like-bg">
-              <div class="like"></div>
+      <div class="cards-container">
+        <div class="cards-section">
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/card1_image.png" alt="factory plant" />
+              <div class="like-bg">
+                <div class="like"></div>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <div class="card-header">
+                <div class="card-title-and-subtitle">
+                  <h2 class="card-title">Title</h2>
+                  <p class="card-subtitle">subtitle</p>
+                </div>
+                <p class="card-date">20.09.2020</p>
+              </div>
+
+              <div class="card-text-content">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud ...
+                </p>
+                <button class="card-read-more btn">read more</button>
+              </div>
             </div>
           </div>
 
-          <div class="card-content">
-            <div class="card-header">
-              <div class="card-title-and-subtitle">
-                <h2 class="card-title">Title</h2>
-                <p class="card-subtitle">subtitle</p>
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/card2_image.png" alt="factory plant" />
+              <div class="like-bg">
+                <div class="like liked"></div>
               </div>
-              <p class="card-date">20.09.2020</p>
             </div>
 
-            <div class="card-text-content">
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud ...
-              </p>
-            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <div class="card-title-and-subtitle">
+                  <h2 class="card-title">Title</h2>
+                  <p class="card-subtitle">subtitle</p>
+                </div>
+                <p class="card-date">20.09.2020</p>
+              </div>
 
-            <button class="card-read-more btn">read more</button>
+              <div class="card-text-content">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud ... Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt.
+                </p>
+                <button class="card-read-more btn">read more</button>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="card">
-          <div class="card-image">
-            <img src="./img/card1_image.png" alt="factory plant" />
-            <div class="like-bg">
-              <div class="like liked"></div>
-            </div>
-          </div>
-
-          <div class="card-content">
-            <div class="card-header">
-              <div class="card-title-and-subtitle">
-                <h2 class="card-title">Title</h2>
-                <p class="card-subtitle">subtitle</p>
-              </div>
-              <p class="card-date">20.09.2020</p>
-            </div>
-
-            <div class="card-text-content">
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud ...
-              </p>
-            </div>
-
-            <button class="card-read-more btn">read more</button>
-          </div>
-        </div>
+        <button class="add-new-card btn">+add card</button>
       </div>
     </main>
   </body>
