@@ -165,9 +165,12 @@ header .client img {
 }
 
 .tabs .container {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .tabs .container i {
@@ -308,7 +311,6 @@ ul.pagination li a:hover:not(.active) {
 ul.pagination li .active {
   background-color: #2f80ed;
   color: white;
-  border: 1px solid #4caf50;
 }
 
 ul.pagination .prev {
