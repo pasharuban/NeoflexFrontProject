@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+
     <title>Document</title>
   </head>
   <body>
@@ -60,150 +61,164 @@
       </div>
     </div>
 
-    <main class="main-content">
-      <div class="table-section">
-        <div class="container">
-          <div class="table">
-            <header class="table-row table-header">
-              <span>Position</span>
-              <span>Location</span>
-              <span>Price</span>
-            </header>
+    <main class="main">
+      <div class="container">
+        <div class="main-page-content">
+          <div class="table-section">
+            <div class="table">
+              <header class="table-row table-header">
+                <span>Position</span>
+                <span>Location</span>
+                <span>Price</span>
+              </header>
 
-            <div class="table-row row-elements">
-              <span>Item1</span>
-              <span>Item2</span>
-              <span>Item3</span>
+              <div class="table-row row-elements">
+                <span>Item1</span>
+                <span>Item2</span>
+                <span>Item3</span>
+              </div>
+
+              <div class="table-row row-elements">
+                <span>Item4</span>
+                <span>Item5</span>
+                <span>Item6</span>
+              </div>
+
+              <div class="table-row row-elements">
+                <span>Item7</span>
+                <span>Item8</span>
+                <span>Item9</span>
+              </div>
+
+              <div class="table-row row-elements">
+                <span>Item10</span>
+                <span>Item11</span>
+                <span>Item12</span>
+              </div>
+
+              <div class="table-row row-elements">
+                <span>Item13</span>
+                <span>Item14</span>
+                <span>Item15</span>
+              </div>
+
+              <div class="table-row row-elements">
+                <span>Item16</span>
+                <span>Item17</span>
+                <span>Item18</span>
+              </div>
+              <div class="table-row row-elements">
+                <span>Item16</span>
+                <span>Item17</span>
+                <span>Item18</span>
+              </div>
+              <div class="table-row row-elements">
+                <span>Item19</span>
+                <span>Item20</span>
+                <span>Item21</span>
+              </div>
             </div>
 
-            <div class="table-row row-elements">
-              <span>Item4</span>
-              <span>Item5</span>
-              <span>Item6</span>
-            </div>
+            <ul class="pagination">
+              <li class="prev"><button class="pagination-arrow"><</button></li>
+              <li><a href="#">1</a></li>
+              <li><a class="active" href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li class="next"><button class="pagination-arrow">></button></li>
+            </ul>
 
-            <div class="table-row row-elements">
-              <span>Item7</span>
-              <span>Item8</span>
-              <span>Item9</span>
-            </div>
-
-            <div class="table-row row-elements">
-              <span>Item10</span>
-              <span>Item11</span>
-              <span>Item12</span>
-            </div>
-
-            <div class="table-row row-elements">
-              <span>Item13</span>
-              <span>Item14</span>
-              <span>Item15</span>
-            </div>
-
-            <div class="table-row row-elements">
-              <span>Item16</span>
-              <span>Item17</span>
-              <span>Item18</span>
-            </div>
-            <div class="table-row row-elements">
-              <span>Item16</span>
-              <span>Item17</span>
-              <span>Item18</span>
-            </div>
-            <div class="table-row row-elements">
-              <span>Item19</span>
-              <span>Item20</span>
-              <span>Item21</span>
-            </div>
+            <select class="select-table-rows" name="select">
+              <option>10</option>
+              <option>9</option>
+              <option>8</option>
+              <option>7</option>
+              <option>6</option>
+              <option>5</option>
+              <option>4</option>
+              <option>3</option>
+            </select>
           </div>
 
-          <ul class="pagination">
-            <li class="prev"><button class="pagination-arrow"><</button></li>
-            <li><a href="#">1</a></li>
-            <li><a class="active" href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">6</a></li>
-            <li><a href="#">7</a></li>
-            <li class="next"><button class="pagination-arrow">></button></li>
-          </ul>
+          <div class="cards-container">
+            <div class="cards-section">
+              <div class="card">
+                <div class="card-image">
+                  <img src="./img/card1_image.png" alt="factory plant" />
+                  <div class="like-bg">
+                    <div class="like"></div>
+                  </div>
+                </div>
 
-          <select class="select-table-rows" name="select">
-            <option>10</option>
-            <option>9</option>
-            <option>8</option>
-            <option>7</option>
-            <option>6</option>
-            <option>5</option>
-            <option>4</option>
-            <option>3</option>
-          </select>
+                <div class="card-content">
+                  <div class="card-header">
+                    <div class="card-title-and-subtitle">
+                      <h2 class="card-title">Title</h2>
+                      <p class="card-subtitle">subtitle</p>
+                    </div>
+                    <p class="card-date">20.09.2020</p>
+                  </div>
+
+                  <div class="card-text-content">
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud ...
+                    </p>
+                    <button class="card-read-more btn">read more</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-image">
+                  <img src="./img/card2_image.png" alt="factory plant" />
+                  <div class="like-bg">
+                    <div class="like liked"></div>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <div class="card-header">
+                    <div class="card-title-and-subtitle">
+                      <h2 class="card-title">Title</h2>
+                      <p class="card-subtitle">subtitle</p>
+                    </div>
+                    <p class="card-date">20.09.2020</p>
+                  </div>
+
+                  <div class="card-text-content">
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud ... Lorem
+                      ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod tempor incididunt.
+                    </p>
+                    <button class="card-read-more btn">read more</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="add-new-card btn">+add card</button>
+          </div>
         </div>
       </div>
-
-      <div class="cards-container">
-        <div class="cards-section">
-          <div class="card">
-            <div class="card-image">
-              <img src="./img/card1_image.png" alt="factory plant" />
-              <div class="like-bg">
-                <div class="like"></div>
-              </div>
-            </div>
-
-            <div class="card-content">
-              <div class="card-header">
-                <div class="card-title-and-subtitle">
-                  <h2 class="card-title">Title</h2>
-                  <p class="card-subtitle">subtitle</p>
-                </div>
-                <p class="card-date">20.09.2020</p>
-              </div>
-
-              <div class="card-text-content">
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud ...
-                </p>
-                <button class="card-read-more btn">read more</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-image">
-              <img src="./img/card2_image.png" alt="factory plant" />
-              <div class="like-bg">
-                <div class="like liked"></div>
-              </div>
-            </div>
-
-            <div class="card-content">
-              <div class="card-header">
-                <div class="card-title-and-subtitle">
-                  <h2 class="card-title">Title</h2>
-                  <p class="card-subtitle">subtitle</p>
-                </div>
-                <p class="card-date">20.09.2020</p>
-              </div>
-
-              <div class="card-text-content">
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud ... Lorem ipsum dolor
-                  sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt.
-                </p>
-                <button class="card-read-more btn">read more</button>
-              </div>
-            </div>
-          </div>
+      <div class="container hide">
+        <div class="secondPageContent">
+          <p>Content on second page!</p>
         </div>
-        <button class="add-new-card btn">+add card</button>
+      </div>
+      <div class="container hide">
+        <div class="thirdPageContent">
+          <p>Content on third page!</p>
+        </div>
       </div>
     </main>
+
+    <script src="scripts/index.js"></script>
   </body>
 </html>

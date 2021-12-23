@@ -67,20 +67,8 @@ button {
   height: 50px;
 }
 
-.main-content {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+.hide {
+  display: none;
 }
 
 header {
@@ -160,7 +148,6 @@ header .client img {
 }
 
 .tabs {
-  margin-bottom: 60px;
   background-color: #2d9cdb;
 }
 
@@ -194,7 +181,7 @@ header .client img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px;
+  padding: 10px 0;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
 }
@@ -205,11 +192,21 @@ header .client img {
 }
 
 .tabs .container .active {
+  position: relative;
   background-color: #2f80ed;
-  border-bottom: 8px solid white;
 }
 
-.table-section .container {
+.tabs .container .active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 8px;
+  width: 100%;
+  background-color: white;
+}
+
+.table-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,7 +222,7 @@ header .client img {
           justify-content: center;
 }
 
-.table-section .container .table {
+.table-section .table {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (1fr)[auto];
@@ -235,20 +232,20 @@ header .client img {
   border: 1px solid #2f80ed;
 }
 
-.table-section .container .table .table-header {
+.table-section .table .table-header {
   background-color: #2f80ed;
   color: white;
 }
 
-.table-section .container .table .row-elements {
+.table-section .table .row-elements {
   color: black;
 }
 
-.table-section .container .table .row-elements:nth-child(odd) {
+.table-section .table .row-elements:nth-child(odd) {
   background-color: #efefef;
 }
 
-.table-section .container .table .row-elements span {
+.table-section .table .row-elements span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,11 +261,11 @@ header .client img {
   transition: all 0.7s;
 }
 
-.table-section .container .table .row-elements span:not(:last-child) {
+.table-section .table .row-elements span:not(:last-child) {
   border-right: 1px solid #2f80ed;
 }
 
-.table-section .container .table .row-elements span:hover {
+.table-section .table .row-elements span:hover {
   background-color: #d8d8d8;
 }
 
@@ -545,6 +542,35 @@ ul.pagination .pagination-arrow:hover {
   margin-top: 35px;
 }
 
+.main {
+  margin-top: 60px;
+}
+
+.main .container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main-page-content {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.secondPageContent p,
+.thirdPageContent p {
+  font-size: 50px;
+}
+
 @media screen and (max-width: 1280px) {
   .page-header {
     padding: 25px;
@@ -621,7 +647,10 @@ ul.pagination .pagination-arrow:hover {
 }
 
 @media screen and (max-width: 1230px) {
-  .main-content {
+  main .container {
+    padding: 0 15px;
+  }
+  .main-page-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

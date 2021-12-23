@@ -38,13 +38,6 @@
   height: 50px;
 }
 
-.main-content {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 15px;
-
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+.hide {
+  display: none;
 }
