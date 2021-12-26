@@ -101,5 +101,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   selectTab();
   addLike();
+
+  createTable();
   selectRows();
 });

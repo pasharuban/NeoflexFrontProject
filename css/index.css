@@ -276,9 +276,9 @@ ul.pagination {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding: 0;
   margin: 0;
   width: 570px;
@@ -287,12 +287,16 @@ ul.pagination {
 }
 
 ul.pagination li {
-  display: inline;
+  list-style-type: none;
 }
 
-ul.pagination li a {
+ul.pagination .paginator-item {
+  display: inline;
+  margin-right: 19px;
+}
+
+ul.pagination .paginator-item a {
   color: #2f80ed;
-  float: left;
   padding: 5px 11px;
   text-decoration: none;
   -webkit-transition: background-color 0.3s;
@@ -300,12 +304,16 @@ ul.pagination li a {
   border: 1px solid #2f80ed;
 }
 
-ul.pagination li a:hover:not(.active) {
+ul.pagination .paginator-item a:hover:not(.active) {
   -webkit-box-shadow: 0 0 10px #2f80ed;
           box-shadow: 0 0 10px #2f80ed;
 }
 
-ul.pagination li .active {
+ul.pagination .paginator-item:last-child {
+  margin-right: 39px;
+}
+
+ul.pagination .paginator-item .active {
   background-color: #2f80ed;
   color: white;
 }
@@ -315,7 +323,7 @@ ul.pagination .prev {
 }
 
 ul.pagination .next {
-  margin-left: 40px;
+  margin-left: auto;
 }
 
 ul.pagination .pagination-arrow {
