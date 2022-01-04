@@ -64,7 +64,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50px;
 }
 
 .hide {
@@ -217,24 +216,28 @@ header .client img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  min-height: 65vh;
 }
 
 .table-section .table {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[auto];
-      grid-template-rows: repeat(auto, 1fr);
+  -ms-grid-rows: ()[auto];
+      grid-template-rows: repeat(auto);
   width: 570px;
   max-width: 570px;
+  height: auto;
   border: 1px solid #2f80ed;
+  margin-bottom: auto;
 }
 
 .table-section .table .table-header {
   background-color: #2f80ed;
   color: white;
+  height: 50px;
 }
 
 .table-section .table .row-elements {
@@ -246,6 +249,9 @@ header .client img {
 }
 
 .table-section .table .row-elements span {
+  text-align: center;
+  height: auto;
+  padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,13 +275,13 @@ header .client img {
   background-color: #d8d8d8;
 }
 
-ul.pagination {
+div.pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -286,16 +292,21 @@ ul.pagination {
   margin: 30px 0;
 }
 
-ul.pagination li {
-  list-style-type: none;
+div.pagination .paginator-elements-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 80%;
 }
 
-ul.pagination .paginator-item {
-  display: inline;
+div.pagination .paginator-item {
   margin-right: 19px;
-}
-
-ul.pagination .paginator-item a {
   color: #2f80ed;
   padding: 5px 11px;
   text-decoration: none;
@@ -304,29 +315,30 @@ ul.pagination .paginator-item a {
   border: 1px solid #2f80ed;
 }
 
-ul.pagination .paginator-item a:hover:not(.active) {
+div.pagination .paginator-item:last-child {
+  margin-right: 0;
+}
+
+div.pagination .paginator-item:hover:not(.active) {
+  cursor: pointer;
   -webkit-box-shadow: 0 0 10px #2f80ed;
           box-shadow: 0 0 10px #2f80ed;
 }
 
-ul.pagination .paginator-item:last-child {
-  margin-right: 39px;
-}
-
-ul.pagination .paginator-item .active {
+div.pagination .active {
   background-color: #2f80ed;
   color: white;
 }
 
-ul.pagination .prev {
+div.pagination .prev {
   margin-right: 40px;
 }
 
-ul.pagination .next {
+div.pagination .next {
   margin-left: auto;
 }
 
-ul.pagination .pagination-arrow {
+div.pagination .pagination-arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,7 +360,7 @@ ul.pagination .pagination-arrow {
   padding: 5px 11px;
 }
 
-ul.pagination .pagination-arrow:hover {
+div.pagination .pagination-arrow:hover {
   cursor: pointer;
   -webkit-box-shadow: 0 0 10px #2f80ed;
           box-shadow: 0 0 10px #2f80ed;
@@ -518,14 +530,16 @@ ul.pagination .pagination-arrow:hover {
 
 .card-image .like-bg:hover .like {
   cursor: pointer;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .card-image .like-bg .like {
   width: 15px;
   height: 15px;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='15' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M13.544.979c-1.605-1.492-3.993-1.224-5.467.435l-.577.648-.577-.648C5.453-.245 3.062-.513 1.456.979c-1.84 1.713-1.936 4.788-.29 6.644l5.67 6.386a.867.867 0 0 0 1.326 0l5.67-6.386c1.648-1.856 1.552-4.93-.288-6.644Z' fill='%23fff'/%3e%3c/svg%3e");
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .card-image .like-bg .liked {
@@ -577,6 +591,78 @@ ul.pagination .pagination-arrow:hover {
 .secondPageContent p,
 .thirdPageContent p {
   font-size: 50px;
+}
+
+@-webkit-keyframes ldio-tex3fonxnso {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes ldio-tex3fonxnso {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.ldio-tex3fonxnso div {
+  position: absolute;
+  -webkit-animation: ldio-tex3fonxnso 1s linear infinite;
+          animation: ldio-tex3fonxnso 1s linear infinite;
+  width: 104.80000000000001px;
+  height: 104.80000000000001px;
+  top: 13.100000000000001px;
+  left: 13.100000000000001px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2.62px 0 0 #2f80ed;
+          box-shadow: 0 2.62px 0 0 #2f80ed;
+  -webkit-transform-origin: 52.400000000000006px 53.71px;
+          transform-origin: 52.400000000000006px 53.71px;
+}
+
+.loadingio-spinner-eclipse-gu7ouvx1mka {
+  margin: 0 auto;
+  width: 131px;
+  height: 131px;
+  display: inline-block;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.ldio-tex3fonxnso {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transform: translateZ(0) scale(1);
+          transform: translateZ(0) scale(1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  /* see note above */
+}
+
+.ldio-tex3fonxnso div {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 @media screen and (max-width: 1280px) {

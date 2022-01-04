@@ -1,20 +1,28 @@
 .table-section {
   @include flexColumn;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
+
+  min-height: 65vh;
 
   .table {
     display: grid;
-    grid-template-rows: repeat(auto, 1fr);
+    grid-template-rows: repeat(auto);
 
     width: 570px;
     max-width: 570px;
 
+    height: auto;
+
     border: 1px solid #2f80ed;
+
+    margin-bottom: auto;
 
     .table-header {
       background-color: #2f80ed;
       color: white;
+
+      height: 50px;
     }
 
     .row-elements {
@@ -25,6 +33,11 @@
       }
 
       span {
+        text-align: center;
+        height: auto;
+
+        padding: 5px;
+
         &:not(:last-child) {
           border-right: 1px solid #2f80ed;
         }
@@ -45,9 +58,9 @@
   }
 }
 
-ul.pagination {
+div.pagination {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
 
   padding: 0;
@@ -58,34 +71,35 @@ ul.pagination {
 
   margin: 30px 0;
 
-  li {
-    list-style-type: none;
+  .paginator-elements-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
   }
 
   .paginator-item {
-    display: inline;
     margin-right: 19px;
 
-    a {
-      color: #2f80ed;
-      padding: 5px 11px;
-      text-decoration: none;
-      transition: background-color 0.3s;
-      border: 1px solid #2f80ed;
-
-      &:hover:not(.active) {
-        box-shadow: 0 0 10px #2f80ed;
-      }
-    }
+    color: #2f80ed;
+    padding: 5px 11px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: 1px solid #2f80ed;
 
     &:last-child {
-      margin-right: 39px;
+      margin-right: 0;
     }
 
-    .active {
-      background-color: #2f80ed;
-      color: white;
+    &:hover:not(.active) {
+      cursor: pointer;
+      box-shadow: 0 0 10px #2f80ed;
     }
+  }
+
+  .active {
+    background-color: #2f80ed;
+    color: white;
   }
 
   .prev {

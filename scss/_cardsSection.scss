@@ -104,13 +104,14 @@
 
     &:hover .like {
       cursor: pointer;
-      transform: scale(1.1);
+      transform: scale(1.2);
     }
 
     .like {
       width: 15px;
       height: 15px;
       background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='15' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M13.544.979c-1.605-1.492-3.993-1.224-5.467.435l-.577.648-.577-.648C5.453-.245 3.062-.513 1.456.979c-1.84 1.713-1.936 4.788-.29 6.644l5.67 6.386a.867.867 0 0 0 1.326 0l5.67-6.386c1.648-1.856 1.552-4.93-.288-6.644Z' fill='%23fff'/%3e%3c/svg%3e");
+      transition: all 0.4s;
     }
 
     .liked {
